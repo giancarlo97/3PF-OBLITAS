@@ -23,16 +23,16 @@ describe('UsuariosService', () => {
   
   it('El servicio retorna un arreglo de usuarios mockeados', (done: DoneFn) => {
     const mockDatos = [
-      {"usuario":"Avery.Douglas","contrasena":"vY8VIYqwqZ6_oSQ","admin":true,"canLoad":false,"canActivateChild":true,"id":"1"},
-      {"usuario":"Cielo_Stanton77","contrasena":"Xc_ipPOo2vXFJ_M","admin":false,"canLoad":true,"canActivateChild":true,"id":"2"}
+    {"usuario":"Corrine_Jenkins","contrasena":"hbtGPQuXQAoNcOM","admin":true,"canLoad":false,"canActivateChild":true,"id":"1"},
+    {"usuario":"Marietta_OKeefe15","contrasena":"vePFITtdMJ2c8eX","admin":true,"canLoad":false,"canActivateChild":false,"id":"2"}
     ];
 
     httpClientSpy.get.and.returnValue(of(mockDatos));
 
     service.obtenerUsuarios().subscribe((usuarios) => {
       const mockDatos2 = [
-        {"usuario":"Avery.Douglas","contrasena":"vY8VIYqwqZ6_oSQ","admin":true,"canLoad":false,"canActivateChild":true,"id":"1"},
-        {"usuario":"Cielo_Stanton77","contrasena":"Xc_ipPOo2vXFJ_M","admin":false,"canLoad":true,"canActivateChild":true,"id":"2"}
+        {"usuario":"Brittany56","contrasena":"8515KC9D7p388sb","admin":false,"canLoad":false,"canActivateChild":true,"id":"3"},
+        {"usuario":"Rigoberto.Rau","contrasena":"nZdQIjbRWGYkmKk","admin":false,"canLoad":true,"canActivateChild":true,"id":"4"}
       ];
       expect(usuarios).toEqual(mockDatos2);
       done();

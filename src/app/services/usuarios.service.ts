@@ -11,6 +11,6 @@ export class UsuariosService {
   ) { }
 
   obtenerUsuarios(){
-    return this.http.get('https://635b1749aa7c3f113db5b06a.mockapi.io/usuarios');
+    return this.http.get('https://63603a09ca0fe3c21aaf1470.mockapi.io/usuario');
   }
 }
